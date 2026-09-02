@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Site - Tezliklə</title>
+    <style>
+      :root {
+        --text: #e5e7eb;
+        --muted: #9ca3af;
+        --primary: #38bdf8;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #020817, #0f172a 40%, #111827);
+        color: var(--text);
+        line-height: 1.6;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .container {
+        width: min(800px, 90%);
+        margin: 0 auto;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      header {
+        padding: 30px 0;
+        text-align: center;
+      }
+
+      .logo {
+        font-weight: 700;
+        font-size: 2rem;
+        letter-spacing: 0.05em;
+        color: var(--primary);
+      }
+
+      .hero {
+        text-align: center;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        line-height: 1.2;
+        margin: 0 0 16px;
+      }
+
+      .lead {
+        font-size: 1.2rem;
+        color: var(--muted);
+        max-width: 500px;
+        margin: 0 auto 30px;
+      }
+
+      footer {
+        padding: 30px 0;
+        color: var(--muted);
+        text-align: center;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">MY SITE</div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>Saytımız hazırlanır...</h1>
+        <p class="lead">
+          Tezliklə bu domendə yeni layihəmizlə qarşınızda olacağıq. 
+          Bizi izləməyə davam edin!
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 My Site — Bütün hüquqlar qorunur.
+    </footer>
+  </body>
+</html>
