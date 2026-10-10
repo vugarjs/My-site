@@ -1,96 +1,106 @@
-<!DOCTYPE html>
-<html lang="az">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Site - Tezliklə</title>
-    <style>
-      :root {
-        --text: #e5e7eb;
-        --muted: #9ca3af;
-        --primary: #38bdf8;
-      }
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Vugar is a software developer from Azerbaijan focused on C#, .NET, and modern frontend development.">
+  <meta name="theme-color" content="#08110f">
+  <title>Vugar — Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Vugar, home"><span class="brand-mark">V</span><span>Vugar<span class="dot">.</span></span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+    </nav>
+    <a class="header-cta" href="#contact">Let’s talk <span>↗</span></a>
+  </header>
 
-      * {
-        box-sizing: border-box;
-      }
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Available for learning &amp; collaboration</p>
+        <h1 id="hero-title">Building reliable<br><em>digital experiences.</em></h1>
+        <p class="hero-lede">Hi, I’m Vugar — a software developer from Azerbaijan turning thoughtful ideas into functional, user-friendly applications.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span>↓</span></a>
+          <a class="button button-quiet" href="https://github.com/vugarjs" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+        </div>
+      </div>
+      <div class="hero-visual reveal" aria-label="Vugar's technology stack">
+        <div class="code-window">
+          <div class="window-bar"><span></span><span></span><span></span><small>Vugar.cs</small></div>
+          <pre><code><b>public class</b> <i>Developer</i>
+{
+  <b>string</b> Name = <q>"Vugar"</q>;
+  <b>string</b> Focus = <q>"Full-Stack"</q>;
 
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: linear-gradient(135deg, #020817, #0f172a 40%, #111827);
-        color: var(--text);
-        line-height: 1.6;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-      }
+  <b>public async Task</b> Build()
+  {
+    <b>while</b> (curious)
+      <i>await</i> LearnAndCreate();
+  }
+}</code></pre>
+          <div class="status-line"><span>● ready</span><span>UTF-8&nbsp;&nbsp;C#</span></div>
+        </div>
+        <div class="float-tag tag-one">.NET</div><div class="float-tag tag-two">SQL</div><div class="float-tag tag-three">JS</div>
+      </div>
+      <div class="scroll-hint"><span>SCROLL TO DISCOVER</span><i></i></div>
+    </section>
 
-      .container {
-        width: min(800px, 90%);
-        margin: 0 auto;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
+    <section class="intro section" id="about">
+      <div class="section-label reveal"><span>01</span> / ABOUT ME</div>
+      <div class="intro-grid">
+        <h2 class="reveal">I care about the logic<br>behind the <em>experience.</em></h2>
+        <div class="intro-copy reveal">
+          <p>I’m a passionate software developer who enjoys building modern, functional, and user-friendly applications.</p>
+          <p>I like solving problems, exploring new technologies, and turning ideas into real projects — from a clean database model to the final interface.</p>
+          <div class="fact-row"><div><strong>AZ</strong><span>Based in Azerbaijan</span></div><div><strong>∞</strong><span>Always learning</span></div></div>
+        </div>
+      </div>
+    </section>
 
-      header {
-        padding: 30px 0;
-        text-align: center;
-      }
+    <section class="skills section" id="skills">
+      <div class="section-label reveal"><span>02</span> / MY TOOLKIT</div>
+      <div class="section-heading reveal"><h2>Skills built through<br><em>hands-on practice.</em></h2><p>A growing toolkit for building complete applications, from database to browser.</p></div>
+      <div class="skill-grid">
+        <article class="skill-card reveal"><div class="skill-icon">{ }</div><p>01</p><h3>Backend</h3><ul><li>C#</li><li>.NET</li><li>Entity Framework Core</li></ul></article>
+        <article class="skill-card reveal"><div class="skill-icon">&lt;/&gt;</div><p>02</p><h3>Frontend</h3><ul><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul></article>
+        <article class="skill-card reveal"><div class="skill-icon">◫</div><p>03</p><h3>Data &amp; Tools</h3><ul><li>Microsoft SQL Server</li><li>Git &amp; GitHub</li><li>Visual Studio / VS Code</li></ul></article>
+        <article class="skill-card reveal"><div class="skill-icon">◎</div><p>04</p><h3>Concepts</h3><ul><li>OOP &amp; LINQ</li><li>Async / Await</li><li>Database Design</li></ul></article>
+      </div>
+    </section>
 
-      .logo {
-        font-weight: 700;
-        font-size: 2rem;
-        letter-spacing: 0.05em;
-        color: var(--primary);
-      }
+    <section class="projects section" id="projects">
+      <div class="section-label reveal"><span>03</span> / SELECTED PROJECTS</div>
+      <div class="section-heading reveal"><h2>Ideas turned into<br><em>working software.</em></h2><p>Projects that sharpen my thinking across backend systems, data, and interactive web experiences.</p></div>
+      <div class="project-list">
+        <article class="project reveal"><div class="project-no">01</div><div class="project-body"><div class="project-top"><h3>Restaurant<br>Management System</h3><span class="project-arrow">↗</span></div><p>A console-based application supporting menu management, order creation, and reliable database operations.</p><div class="tags"><span>C#</span><span>.NET</span><span>EF Core</span></div></div></article>
+        <article class="project reveal"><div class="project-no">02</div><div class="project-body"><div class="project-top"><h3>Mini E-Commerce<br>System</h3><span class="project-arrow">↗</span></div><p>A backend project featuring products, customer orders, payments, and thoughtfully modeled database relationships.</p><div class="tags"><span>C#</span><span>SQL Server</span><span>OOP</span></div></div></article>
+        <article class="project reveal"><div class="project-no">03</div><div class="project-body"><div class="project-top"><h3>Memory Match<br>Game</h3><span class="project-arrow">↗</span></div><p>An interactive browser game with responsive visuals, playful feedback, and clean JavaScript game logic.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div></article>
+      </div>
+    </section>
 
-      .hero {
-        text-align: center;
-      }
+    <section class="goal section" id="goal">
+      <div class="goal-card reveal">
+        <p class="eyebrow"><span></span> THE NEXT CHAPTER</p>
+        <blockquote>“My goal is to become a skilled <em>Full-Stack Developer</em> and build software that makes a meaningful difference.”</blockquote>
+        <p>I’m continuously expanding my knowledge of modern web technologies — one problem, one project, and one lesson at a time.</p>
+      </div>
+    </section>
 
-      h1 {
-        font-size: clamp(2rem, 5vw, 3.5rem);
-        line-height: 1.2;
-        margin: 0 0 16px;
-      }
+    <section class="contact section" id="contact">
+      <p class="section-label reveal"><span>04</span> / GET IN TOUCH</p>
+      <div class="contact-wrap reveal"><p>Have an idea, opportunity, or just want to connect?</p><h2>Let’s build something<br><em>meaningful.</em></h2><div class="contact-links"><a href="https://github.com/vugarjs" target="_blank" rel="noreferrer">GitHub <span></span></a></div></div>
+    </section>
+  </main>
 
-      .lead {
-        font-size: 1.0rem;
-        color: var(--muted);
-        max-width: 500px;
-        top: 320px;
-        right: 350px;
-        position: relative;
-      }
-
-      footer {
-        padding: 30px 0;
-        color: var(--muted);
-        text-align: center;
-        font-size: 0.9rem;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <div class="logo">Project</div>
-    </header>
-
-    <main class="container">
-      <section class="hero">
-        <h1>Saytımız hazırlanır...</h1>
-        <p class="lead">
-          Tezliklə bu domendə yeni layihəmizlə qarşınızda olacağıq, 
-          Bizi izləməyə davam edin!
-        </p>
-      </section>
-    </main>
-
-    <footer>
-      © 2026 Project — Bütün hüquqlar qorunur.
-    </footer>
-  </body>
+  <footer><a class="brand" href="#top"><span class="brand-mark">V</span><span>Vugar<span class="dot">.</span></span></a><p>Software Developer · Azerbaijan</p><p>© <span id="year"></span> Vugar</p></footer>
+  <script src="./assets/js/script.js"></script>
+</body>
 </html>
